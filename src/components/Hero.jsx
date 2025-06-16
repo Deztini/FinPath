@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 import classes from "./Hero.module.css";
 import NewGoal from "./NewGoal";
 import { useContext } from "react";
-import { GoalContext } from "../../store/goal-context";
+import { GoalContext } from "../store/goal-context";
 
 export default function Hero() {
   const { goals, setModalOpen } = useContext(GoalContext);

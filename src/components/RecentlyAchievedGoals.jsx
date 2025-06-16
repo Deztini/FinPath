@@ -1,7 +1,7 @@
 import classes from "./RecentlyAchievedGoals.module.css";
 import { CheckCircle } from "lucide-react";
 import { useContext } from "react";
-import { GoalContext } from "../../store/goal-context";
+import { GoalContext } from "../store/goal-context";
 
 export default function RecentlyAchievedGoals() {
   const {goals} = useContext(GoalContext)

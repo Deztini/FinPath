@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import classes from "./NewGoal.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { useContext } from "react";
-import { GoalContext } from "../../store/goal-context";
+import { GoalContext } from "../store/goal-context";
 
 export default function NewGoal() {
   const { editableGoal, setGoals, setEditableGoal, setModalOpen } =

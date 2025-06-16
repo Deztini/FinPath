@@ -5,7 +5,7 @@ import NewGoal from "../components/NewGoal";
 import RecentlyAchievedGoals from "../components/RecentlyAchievedGoals";
 import GoalTips from "../components/GoalTips";
 import classes from "./Goals.module.css";
-import { GoalContext } from "../../store/goal-context";
+import { GoalContext } from "../store/goal-context";
 import { useContext } from "react";
 
 export default function Goals() {

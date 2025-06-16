@@ -1,8 +1,8 @@
 import { useState } from "react";
 import classes from "./RecentTransactions.module.css";
 import { useContext } from "react";
-import { BudgetContext } from "../../store/budget-context";
-import { GoalContext } from "../../store/goal-context";
+import { BudgetContext } from "../store/budget-context";
+import { GoalContext } from "../store/goal-context";
 
 // const transactions = [
 //   {

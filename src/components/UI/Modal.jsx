@@ -1,6 +1,6 @@
 import classes from "./Modal.module.css";
 import { useContext } from "react";
-import { GoalContext } from "../../../store/goal-context";
+import { GoalContext } from "../../store/goal-context";
 
 export default function Modal({ children,  title }) {
   const {setEditableGoal, setModalOpen} = useContext(GoalContext);

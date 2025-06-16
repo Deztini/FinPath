@@ -4,7 +4,7 @@ import SpendingChart from "../components/SpendingChart";
 import TransactionForm from "../components/TransactionForm";
 import classes from "./Budget.module.css";
 import { useContext } from "react";
-import { BudgetContext } from "../../store/budget-context";
+import { BudgetContext } from "../store/budget-context";
 
 export default function Budget() {
   const { transaction, setTransaction } = useContext(BudgetContext);

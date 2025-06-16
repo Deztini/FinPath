@@ -4,7 +4,7 @@ import { Pencil } from "lucide-react";
 import { Trash } from "lucide-react";
 import { useState } from "react";
 import { useContext } from "react";
-import { GoalContext } from "../../store/goal-context";
+import { GoalContext } from "../store/goal-context";
 
 export default function GoalCards() {
   const { goals, setGoals, setEditableGoal, setModalOpen, modalOpen } =

@@ -2,7 +2,7 @@ import { useState } from "react";
 import classes from "./TransactionForm.module.css";
 import { SkipForward } from "lucide-react";
 import { useContext } from "react";
-import { BudgetContext } from "../../store/budget-context";
+import { BudgetContext } from "../store/budget-context";
 
 const categories = {
   income: [
