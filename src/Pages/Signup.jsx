@@ -11,7 +11,7 @@ import {
   isEmail,
   isEqual,
   isNotEmpty,
-} from "../../utils/validation";
+} from "../utils/validation";
 
 export default function Signup() {
   const [email, setEmail] = useState("");

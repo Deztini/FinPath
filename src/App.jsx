@@ -7,8 +7,8 @@ import Forecast from "./Pages/Forecast";
 import "./App.css";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
-import GoalContextProvider from "../store/goal-context";
-import BudgetContextProvider from "../store/budget-context";
+import GoalContextProvider from "./store/goal-context";
+import BudgetContextProvider from "./store/budget-context";
 
 const router = createBrowserRouter([
   {
