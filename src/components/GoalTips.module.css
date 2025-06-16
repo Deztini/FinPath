@@ -1,0 +1,22 @@
+.card {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 0.1px solid #ebebeb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+  .card {
+     width: 79%;
+  }
+}

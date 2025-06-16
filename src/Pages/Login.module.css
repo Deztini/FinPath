@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  padding: 30px 40px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+  margin-top: 20px;
+  border-radius: 14px;
+  animation:slide-down-fade-in 0.8s ease-out ;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #878787;
+    font-size: 17px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.button {
+   background-color: #6c63ff;
+   color: #fff;
+   border: 1px solid #6c63ff;
+   border-radius: 7px;
+   width: 350px;
+   padding: 15px 35px;
+   cursor: pointer;
+   font-size: 18px;
+   height: 48px;
+   transition: background-color 0.8s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #5b53f4;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 35px;
+    padding: 10px 20px;
+}
+
+.input:active, input:focus {
+    outline: none;
+}
+
+.line {
+    border-bottom: 1px solid #ccc;
+}
+
+@keyframes slide-down-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 45px;
+    }
+  .login {
+    width: 90%;
+  }
+}
+
