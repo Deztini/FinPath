@@ -50,3 +50,7 @@
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+@media (min-width: 601px) and (max-width: 767px) {
+  
+}

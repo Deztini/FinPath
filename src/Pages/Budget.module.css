@@ -34,6 +34,7 @@
     .container1 {
         flex-direction: column;
         padding: 15px 20px;
+        align-items: center;
     }
 
     .container2 {
@@ -46,7 +47,66 @@
     }
 
     .chart {
-        width: 100%;
+        width: 80%;
         height: auto;
+        margin-left: 10px;
+    }
+
+    .transactions {
+        align-items: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .container1 {
+        flex-direction: column;
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    .container2 {
+        width: 90%;
+    }
+
+    .container3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chart {
+        width: 80%;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    .transactions {
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .container1 {
+        flex-direction: column;
+        padding: 15px 20px;
+        align-items: center;
+    }
+
+    .container2 {
+        width: 90%;
+    }
+
+    .container3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .chart {
+        width: 80%;
+        height: auto;
+        margin-left: 30px;
+    }
+
+    .transactions {
+        align-items: center;
     }
 }

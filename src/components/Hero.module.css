@@ -1,5 +1,6 @@
 .hero {
-    width: 75vw;
+    max-width: 75vw;
+    width: 100%;
     border: 0.01px solid #ccc;
     height: 250px;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
@@ -27,4 +28,23 @@
 .button:hover {
     transform: scale(1.1);
     background-color: #574fef;
+}
+
+@media (max-width: 600px) {
+    .hero {
+      width: 85%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .hero {
+      width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .hero {
+      width: 75%;
+      max-width: 75%;
+    }
 }

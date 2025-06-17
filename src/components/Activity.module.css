@@ -49,3 +49,26 @@
   }
 }
 
+@media (min-width: 601px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    gap: 260px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .header {
+    gap: 290px;
+  }
+}
+
+
+
+

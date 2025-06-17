@@ -21,11 +21,24 @@
         flex-direction: column;
         gap: 30px;
     }
+
+     .dashboard {
+        padding: 20px 40px;
+    }
 }
 
-@media (min-width: 768px ) and (max-width: 900px) {
+@media (min-width: 768px ) and (max-width:1024px) {
     .container {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
+    }
+
+     .dashboard {
+        padding: 20px 70px;
+    }
+
+    .name {
+        text-align: center;
     }
 }

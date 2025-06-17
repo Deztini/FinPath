@@ -10,6 +10,24 @@
         flex-direction: column;
     }
     .goal {
-        padding: 10px 25px;
+        padding: 10px 40px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    .goal {
+        padding: 10px 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .container {
+        flex-direction: column;
+    }
+    .goal {
+        padding: 10px 140px;
     }
 }

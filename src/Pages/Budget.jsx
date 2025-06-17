@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { BudgetContext } from "../store/budget-context";
 
 export default function Budget() {
-  const { transaction, setTransaction } = useContext(BudgetContext);
+  const { transaction } = useContext(BudgetContext);
 
   const totalIncome = transaction
     .filter((t) => t.amount > 0)

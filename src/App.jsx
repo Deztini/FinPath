@@ -3,7 +3,6 @@ import RootLayout from "./Pages/Root";
 import Dashboard from "./Pages/Dashboard";
 import Budget from "./Pages/Budget";
 import Goals from "./Pages/Goals";
-import Forecast from "./Pages/Forecast";
 import "./App.css";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
@@ -44,7 +43,6 @@ const router = createBrowserRouter([
           </GoalContextProvider>
         ),
       },
-      { path: "/finapp/forecast", element: <Forecast /> },
     ],
   },
 ]);

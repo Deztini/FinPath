@@ -8,8 +8,8 @@ export default function Dashboard() {
   return (
     <>
     <div className={classes.dashboard}>
-        <h2>Welcome back, <span style={{color: "#6c63ff", textShadow: "1px 1px 5px #6c63ff"}}>{name}!</span></h2>
-      <DashboardSummary />
+        <h2 className={classes.name}>Welcome back, <span style={{color: "#6c63ff", textShadow: "1px 1px 5px #6c63ff"}}>{name}!</span></h2>
+      <div className={classes.summary}><DashboardSummary /></div>
       <div className={classes.container}>
         <ActivitySummary />
         <FinancialGoalSummary />

@@ -5,7 +5,7 @@ import DashboardCard from "./DashboardCard";
 export default function DashboardSummary() {
   return (
     <>
-      <h1 style={{ marginBottom: "40px" }}>Financial Dashboard</h1>
+      <h1 style={{ marginBottom: "40px" }} className={classes.title}>Financial Dashboard</h1>
       <div className={classes.container}>
         <MonthlySummary
           summaryText="Monthly Income"
