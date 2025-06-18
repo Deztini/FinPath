@@ -20,6 +20,7 @@ export default function Budget() {
   console.log(totalIncome, totalExpense);
 
   const netBalance = Number(totalIncome) - Number(totalExpense);
+
   return (
     <>
       <div className={classes.container1}>
