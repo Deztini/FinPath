@@ -18,10 +18,13 @@ export default function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [name, setName] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   async function handleSignup(e) {
     e.preventDefault();
+
+    setLoading(true);
 
     if (!isEmail(email)) {
       toast.error("Enter a valid email address");
@@ -58,8 +61,10 @@ export default function Signup() {
 
     const data = await response.json();
     if (!response.ok) {
+      setLoading(false);
       return toast.error(data.message);
     }
+    setLoading(false);
     toast.success("Signup Successful");
     setTimeout(() => {
       navigate("/");
@@ -153,7 +158,7 @@ export default function Signup() {
             </div>
 
             <div className={classes.btnContainer}>
-              <button className={classes.button}>Sign Up</button>
+              <button className={classes.button} disabled={loading}>{loading ? "Signing Up..." : "Sign Up"}</button>
             </div>
           </form>
 

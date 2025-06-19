@@ -13,17 +13,22 @@ import { hasMinLength, isEmail, isNotEmpty } from "../utils/validation";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   async function handleLogin(e) {
     e.preventDefault();
 
+     setLoading(true);
+
     if (!isNotEmpty(email) && !isNotEmpty(password)) {
+      setLoading(false);
       toast.error("Fill the required fields");
       return;
     }
 
     if (!hasMinLength(password, 6)) {
+      setLoading(false);
       toast.error(
         "Password does not meet the required length, it should be at least 6 characters long."
       );
@@ -31,6 +36,7 @@ export default function Login() {
     }
 
     if (!isEmail(email)) {
+      setLoading(false);
       toast.error("Enter a valid email address");
       return;
     }
@@ -40,19 +46,21 @@ export default function Login() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
     });
-
+    
+   
     const data = await response.json();
 
     if (response.ok) {
       localStorage.setItem("token", data.token);
       localStorage.setItem("userName", data.name);
+      setLoading(false);
 
       toast.success("Login Successful");
       setTimeout(() => {
         navigate("/finapp/dashboard");
-      }, 3000);
+      }, 1000);
     } else {
-      // alert(data.message || "Login failed");
+      setLoading(false);
       toast.error(data.message || "Login failed");
     }
   }
@@ -97,7 +105,7 @@ export default function Login() {
             </div>
 
             <div className={classes.btnContainer}>
-              <button className={classes.button}>Login</button>
+              <button className={classes.button} disabled={loading}>{loading ? "Loading..." : "Login"}</button>
             </div>
 
             <div className={classes.line}></div>

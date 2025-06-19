@@ -91,6 +91,11 @@
   background-color: #5b53f4;
 }
 
+.button:disabled {
+  opacity: 0.5;
+  filter: blur(0.5);
+}
+
 .input {
   border: 1px solid #ccc;
   border-radius: 10px;
